@@ -1,0 +1,42 @@
+import java.util.*;
+public class Variance{
+    public static void main(String args[]){
+    ArrayList<Integer>list1=new ArrayList<Integer>();
+    ArrayList<Integer>list2=new ArrayList<Integer>();
+    list1.add(100);
+    list1.add(100);
+    list1.add(75);
+    list2.add(120);
+    list2.add(110);
+    list2.add(100);
+    System.out.println("sales of products[tea,coffe,green tea] in 2021:" +list1);
+    System.out.println("sales of products[tea,coffe,green tea] in 2022:" +list2);
+    int i=0;
+    while(i<3){
+        if(list1.get(i)<list2.get(i)){
+            int variance=list2.get(i)-list1.get(i);
+            System.out.println("variance:" +variance);
+            int a=list1.get(i)+list2.get(i);
+            int b=a/2;
+            int c=variance*100;
+            int vpc=c/b;
+            System.out.println("variance percentage:" +vpc +"%");
+            
+            
+            
+        }
+        else{
+            int variance=list1.get(i)-list2.get(i);
+            System.out.println("variance:" +variance);
+            int a=list1.get(i)+list2.get(i);
+            int b=a/2;
+            int c=variance*100;
+            int vpc=c/b;
+            System.out.println("variance percentage:" +vpc +"%");
+            
+            
+        }
+        i++;
+    }
+}
+}
