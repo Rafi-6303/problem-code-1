@@ -21,9 +21,6 @@ public class Variance{
             int c=variance*100;
             int vpc=c/b;
             System.out.println("variance percentage:" +vpc +"%");
-            
-            
-            
         }
         else{
             int variance=list1.get(i)-list2.get(i);
